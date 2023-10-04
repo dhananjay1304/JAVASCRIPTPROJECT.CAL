@@ -12,16 +12,16 @@ function createAndWriteOutput(operator,resultBeforeCalc,calcNumber) {
 
 function add() {
     const enteredNumber =  getUserNumberInput();
-    const calcDescription = `${currentResult} + ${enteredNumber}`
-    currentResult = currentResult + enteredNumber ;
-    outputResult(currentResult, calcDescription);
+    const initialResult = currentResult;
+    const calcDescription = `${currentResult} + ${enteredNumber}`;
+    createAndWriteOutput('+', initialResult, enteredNumber);
 }
 
 function subtract() {
     const enteredNumber =  getUserNumberInput();
-    const calcDescription = `${currentResult} - ${enteredNumber}`
+    const initialResult = currentResult;
     currentResult = currentResult - enteredNumber ;
-    outputResult(currentResult, calcDescription);
+    createAndWriteOutput('-', initialResult, enteredNumber)
 }
 
 function multiply() {}
