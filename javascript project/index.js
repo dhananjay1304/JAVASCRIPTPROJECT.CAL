@@ -3,8 +3,10 @@ let currentResult = defaultResult;
 
 
 function add() {
-    currentResult = currentResult + + parseInt (userInput.value) ;
-    outputResult(currentResult, '');
+    const enteredNumber =  parseInt (usrInput.value);
+    const calcDescription = `${currentResult} + ${usrInput.value}`
+    currentResult = currentResult + + parseInt (usrInput.value) ;
+    outputResult(currentResult, calcDescription);
 }
 
 
