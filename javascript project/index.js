@@ -4,8 +4,8 @@ let currentResult = defaultResult;
 
 function add() {
     const enteredNumber =  parseInt (usrInput.value);
-    const calcDescription = `${currentResult} + ${usrInput.value}`
-    currentResult = currentResult + + parseInt (usrInput.value) ;
+    const calcDescription = `${currentResult} + ${enteredNumber}`
+    currentResult = currentResult + + enteredNumber ;
     outputResult(currentResult, calcDescription);
 }
 
