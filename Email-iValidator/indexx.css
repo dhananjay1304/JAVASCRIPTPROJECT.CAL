@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Kanit&family=Montserrat:ital,wght@0,500;1,400&family=Mulish:wght@700&family=Oswald:wght@300&family=Red+Hat+Display:wght@300&family=Roboto:ital,wght@1,300&family=Young+Serif&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Young Serif', serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: black;
+    color: white;
+    padding: 19px 12px;
+}
+
+ul{
+    display: flex;
+
+}
+
+ul li{
+    list-style: none;
+    padding: 0 23px;
+    font-size: 15px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul >li> a:hover{
+    color: grey;
+}
+
+
+main{
+    min-height: 90vh;
+    padding: 2px;
+}
+
+.logo img{
+    width: 15px;
+    filter: invert(1);
+
+}
+
+
+
+.container{
+    background-color: azure;
+    max-width: 80vw;
+    margin: auto;
+    padding: 15px;
+}
+
+.container h1{
+    padding: 12px 0;
+}
+
+.btn{
+        background-color: black;
+        color: white;
+        padding: 8px 10px;
+        border: 1px solid grey;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    #resultCont div::first-letter{
+        text-transform: uppercase;
+    }
+
+footer{
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:600px) {
+    body{
+        background-color: antiquewhite;
+    }
+    .container{
+        font-size: 12px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    
+    .logo{
+        padding: 6px 0;
+        font-size: 15px;
+    }
+    
+    .logo span{
+        font-size: 20px;
+    }
+
+    .logo img{
+        width: 15px;
+        filter: invert(1);
+
+    }
+}
